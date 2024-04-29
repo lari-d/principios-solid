@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-/*class Circulo{
+class Circulo{
     private:
     float raio;
     const float pi = 3.14;
@@ -30,45 +30,6 @@ using namespace std;
     void perimetroCirculo(float r){
         float per = 2*pi*r;
         cout << "perimetro: " << per << endl;
-    }
-
-};*/
-
-class Circulo{
-    private:
-    float raio;
-    const float pi = 3.14;
-    
-    public:
-    //construtor
-    Circulo(float r){
-        this->raio = r;
-    }
-
-    float getRaio(){
-        return this->raio;
-    }
-
-    void setRaio(float r){
-        this->raio = r;
-    }
-   
-    float areaCirculo(float r){
-        float area = pi*r*r;
-        return area;
-    }
-
-    void printArea(){
-        cout << "area: " << areaCirculo(getRaio()) << endl;
-    }
-   
-    float perimetroCirculo(float r){
-        float per = 2*pi*r;
-        return per;
-    }
-
-    void printCirculo(){
-        cout << "perimetro: " << perimetroCirculo(getRaio()) << endl;
     }
 
 };
